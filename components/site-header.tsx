@@ -26,6 +26,9 @@ export function SiteHeader() {
           <Link href="#about" className="text-sm font-medium transition-colors hover:text-[#40148c]">
             About Us
           </Link>
+          <Link href="#services" className="text-sm font-medium transition-colors hover:text-[#40148c]">
+            Our Services
+          </Link>
           <Link href="#contact" className="text-sm font-medium transition-colors hover:text-[#40148c]">
             Contact Us
           </Link>
