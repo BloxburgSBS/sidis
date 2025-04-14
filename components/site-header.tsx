@@ -30,7 +30,7 @@ export function SiteHeader() {
             Contact Us
           </Link>
           <a
-            href="https://store.sidis.ae"
+            href="https://sidis.shop"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-[#40148c] hover:underline flex items-center"

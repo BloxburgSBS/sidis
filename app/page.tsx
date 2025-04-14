@@ -31,7 +31,7 @@ export default function Home() {
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   SIDIS FZ-LLC provides complete e-commerce solutions including fulfillment, product sourcing, and
-                  Shopify development.
+                  web development.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -39,7 +39,7 @@ export default function Home() {
                   <Button className="bg-[#40148c] hover:bg-[#40148c]/90">Our Services</Button>
                 </Link>
                 <a
-                  href="https://store.sidis.ae"
+                  href="https://sidis.shop"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-[#40148c] font-medium hover:underline"
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
                 <Image
-                  src="/images/hero-ecommerce.jpg"
+                  src="https://i.imgur.com/9OOWvBA.png"
                   alt="SIDIS FZ-LLC E-Commerce Solutions"
                   fill
                   className="object-cover rounded-lg"
@@ -70,55 +70,37 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Us</h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
                 SIDIS FZ-LLC is a leading e-commerce solutions provider based in Ras Al Khaimah, UAE. We help
                 entrepreneurs and businesses succeed in the online marketplace.
               </p>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-2 md:gap-8">
-              <div className="relative overflow-hidden rounded-lg">
-                <Image
-                  src="/images/warehouse.jpg"
-                  alt="SIDIS Warehouse"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-[300px]"
-                />
+            <div className="grid max-w-4xl gap-8 py-8 md:grid-cols-2">
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40148c]/10">
+                  <Clock className="h-6 w-6 text-[#40148c]" />
+                </div>
+                <h3 className="text-xl font-bold">Our Experience</h3>
+                <p className="text-muted-foreground">
+                  With specialized expertise in UAE e-commerce logistics, we've built a reputation for reliability
+                  and excellence in helping businesses scale their online operations.
+                </p>
               </div>
-              <div className="flex flex-col justify-center space-y-8">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40148c]/10">
-                      <Clock className="h-6 w-6 text-[#40148c]" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col space-y-2 text-left">
-                    <h3 className="text-xl font-bold">Our Experience</h3>
-                    <p className="text-muted-foreground">
-                      With specialized expertise in UAE e-commerce logistics, we've built a reputation for reliability
-                      and excellence in helping businesses scale their online operations.
-                    </p>
-                  </div>
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40148c]/10">
+                  <MapPin className="h-6 w-6 text-[#40148c]" />
                 </div>
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#40148c]/10">
-                      <MapPin className="h-6 w-6 text-[#40148c]" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col space-y-2 text-left">
-                    <h3 className="text-xl font-bold">Our Mission</h3>
-                    <p className="text-muted-foreground">
-                      We're dedicated to empowering e-commerce entrepreneurs with seamless logistics solutions, enabling
-                      them to focus on growth while we handle the operational complexities.
-                    </p>
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold">Our Mission</h3>
+                <p className="text-muted-foreground">
+                  We're dedicated to empowering e-commerce entrepreneurs with seamless logistics solutions, enabling
+                  them to focus on growth while we handle the operations.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Services Section */}
       <section id="services" className="py-12 md:py-24 bg-muted/50">
@@ -126,13 +108,6 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-              <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Your Premier E-Commerce Solutions Provider in the UAE
-              </p>
-              <p className="max-w-[700px] md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed mt-2">
-                Accelerate your online business growth with SIDIS - delivering comprehensive e-commerce infrastructure
-                and expertise tailored to the UAE market.
-              </p>
             </div>
             <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background">
@@ -187,7 +162,7 @@ export default function Home() {
                 We've helped numerous businesses scale their e-commerce operations in the UAE
               </p>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-4 md:gap-8">
+          <div className="mx-auto grid max-w-5xl gap-6 py-8 grid-cols-2 md:grid-cols-4 md:gap-8">
               <div className="flex flex-col items-center space-y-2 p-6">
                 <div className="text-4xl font-bold text-[#40148c]">
                   <CounterAnimation end={5000} suffix="+" />
@@ -425,7 +400,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-muted-foreground text-left">
-                  "The Shopify store SIDIS built for us has a 25% higher conversion rate than our previous site. Their
+                  "The Shopify store SIDIS built for us has a 45% higher conversion rate than our previous site. Their
                   team understands e-commerce optimization and delivers results."
                 </p>
                 <div className="flex text-[#40148c]">
@@ -507,8 +482,7 @@ export default function Home() {
                   <div className="flex flex-col space-y-2 text-left">
                     <h3 className="text-xl font-bold">How quickly can you fulfill orders?</h3>
                     <p className="text-muted-foreground">
-                      We offer next-day delivery within the UAE for orders placed before 2 PM. International shipping
-                      times vary by destination.
+                      We offer next-day delivery within the UAE for orders placed before 4 PM. 
                     </p>
                   </div>
                 </div>

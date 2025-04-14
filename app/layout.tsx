@@ -8,10 +8,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "SIDIS FZ-LLC | E-Commerce Fulfillment & Solutions",
+  title: "SIDIS FZ-LLC",
   description:
-    "Your reliable partner for e-commerce fulfillment, product sourcing, and Shopify development in the UAE.",
-    generator: 'v0.dev'
+    "Your reliable partner for e-commerce fulfillment, product sourcing, and web development in the UAE.",
 }
 
 export default function RootLayout({
