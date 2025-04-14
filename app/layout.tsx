@@ -11,6 +11,9 @@ export const metadata = {
   title: "SIDIS FZ-LLC",
   description:
     "Your reliable partner for e-commerce fulfillment, product sourcing, and web development in the UAE.",
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
