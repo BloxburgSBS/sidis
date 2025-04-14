@@ -29,6 +29,7 @@ export function SiteHeader() {
           <Link href="#contact" className="text-sm font-medium transition-colors hover:text-[#40148c]">
             Contact Us
           </Link>
+          {/*
           <a
             href="https://sidis.shop"
             target="_blank"
@@ -38,6 +39,7 @@ export function SiteHeader() {
             Our Store
             <ExternalLink className="ml-1 h-3 w-3" />
           </a>
+          */}
         </nav>
         <div className="flex md:hidden">
           <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle Menu">

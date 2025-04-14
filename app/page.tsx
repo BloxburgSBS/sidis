@@ -38,6 +38,7 @@ export default function Home() {
                 <Link href="#services">
                   <Button className="bg-[#40148c] hover:bg-[#40148c]/90">Our Services</Button>
                 </Link>
+                {/*
                 <a
                   href="https://sidis.shop"
                   target="_blank"
@@ -46,7 +47,7 @@ export default function Home() {
                 >
                   Visit Our Store
                   <ExternalLink className="ml-1 h-4 w-4" />
-                </a>
+                </a>*/}
               </div>
             </div>
             <div className="flex justify-center lg:justify-end">
