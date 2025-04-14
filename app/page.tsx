@@ -6,14 +6,13 @@ import {
   Mail,
   MapPin,
   Clock,
-  CreditCard,
-  ShoppingCart,
-  Store,
-  Truck,
-  ExternalLink,
+  Server,
+  HardDrive,
+  Cpu,
   CheckCircle,
   Users,
-  Package,
+  Shield,
+  MemoryStickIcon as Memory,
 } from "lucide-react"
 import { CounterAnimation } from "@/components/counter-animation"
 
@@ -27,11 +26,11 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Your E-Commerce Partner in the UAE
+                  Your IT Hardware Partner in the UAE
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  SIDIS FZ-LLC provides complete e-commerce solutions including fulfillment, product sourcing, and
-                  web development.
+                  SIDIS FZ-LLC provides complete IT hardware solutions including servers, storage, networking, and
+                  premium components.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -53,8 +52,8 @@ export default function Home() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
                 <Image
-                  src="https://i.imgur.com/9OOWvBA.png"
-                  alt="SIDIS FZ-LLC E-Commerce Solutions"
+                  src="https://i.imgur.com/9sC45Xm.png"
+                  alt="SIDIS FZ-LLC IT Hardware Solutions"
                   fill
                   className="object-cover rounded-lg"
                   priority
@@ -72,8 +71,8 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Us</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                SIDIS FZ-LLC is a leading e-commerce solutions provider based in Ras Al Khaimah, UAE. We help
-                entrepreneurs and businesses succeed in the online marketplace.
+                SIDIS FZ-LLC is a leading IT hardware solutions provider based in Ras Al Khaimah, UAE. We help
+                businesses and organizations build robust IT infrastructure.
               </p>
             </div>
             <div className="grid max-w-4xl gap-8 py-8 md:grid-cols-2">
@@ -83,8 +82,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Our Experience</h3>
                 <p className="text-muted-foreground">
-                  With specialized expertise in UAE e-commerce logistics, we've built a reputation for reliability
-                  and excellence in helping businesses scale their online operations.
+                  With specialized expertise in server and IT hardware solutions, we've built a reputation for
+                  reliability and excellence in helping businesses build robust IT infrastructure.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
@@ -93,15 +92,14 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Our Mission</h3>
                 <p className="text-muted-foreground">
-                  We're dedicated to empowering e-commerce entrepreneurs with seamless logistics solutions, enabling
-                  them to focus on growth while we handle the operations.
+                  We're dedicated to providing top-tier IT hardware components and server solutions to businesses across
+                  the UAE, with a focus on quality, reliability, and expert support.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* Services Section */}
       <section id="services" className="py-12 md:py-24 bg-muted/50">
@@ -113,39 +111,38 @@ export default function Home() {
             <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#40148c]">
-                  <Store className="h-8 w-8 text-white" />
+                  <Server className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">Warehousing</h3>
+                <h3 className="text-xl font-bold">Server Solutions</h3>
                 <p className="text-muted-foreground text-center">
-                  Strategic warehouse facilities across the UAE for optimal inventory management and distribution.
+                  Complete server solutions from leading brands including Supermicro, HPE, Dell, and Lenovo.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#40148c]">
-                  <CreditCard className="h-8 w-8 text-white" />
+                  <HardDrive className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">COD Remit</h3>
+                <h3 className="text-xl font-bold">Storage Solutions</h3>
                 <p className="text-muted-foreground text-center">
-                  Secure daily cash-on-delivery payments directly to your UAE bank account with transparent tracking.
+                  Enterprise-grade SSDs, HDDs, and storage systems from Samsung, Seagate, Western Digital, and more.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#40148c]">
-                  <Truck className="h-8 w-8 text-white" />
+                  <Cpu className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">Fulfillment</h3>
+                <h3 className="text-xl font-bold">CPU & Components</h3>
                 <p className="text-muted-foreground text-center">
-                  End-to-end order processing with premium packaging and expedited delivery throughout the Emirates.
+                  Premium processors and components from Intel, AMD, and other leading manufacturers.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#40148c]">
-                  <ShoppingCart className="h-8 w-8 text-white" />
+                  <Memory className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">Product Sourcing</h3>
+                <h3 className="text-xl font-bold">Memory Solutions</h3>
                 <p className="text-muted-foreground text-center">
-                  Strategic product identification and supplier negotiation to secure high-margin, trending products for
-                  your store.
+                  High-performance server and desktop memory from Samsung, Micron, Kingston, and other trusted brands.
                 </p>
               </div>
             </div>
@@ -160,33 +157,33 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Impact</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                We've helped numerous businesses scale their e-commerce operations in the UAE
+                We've helped numerous businesses build robust IT infrastructure across the UAE
               </p>
             </div>
-          <div className="mx-auto grid max-w-5xl gap-6 py-8 grid-cols-2 md:grid-cols-4 md:gap-8">
+            <div className="mx-auto grid max-w-5xl gap-6 py-8 grid-cols-2 md:grid-cols-4 md:gap-8">
               <div className="flex flex-col items-center space-y-2 p-6">
                 <div className="text-4xl font-bold text-[#40148c]">
-                  <CounterAnimation end={5000} suffix="+" />
+                  <CounterAnimation end={1000} suffix="+" />
                 </div>
-                <p className="text-muted-foreground text-center font-medium">Orders Fulfilled Monthly</p>
+                <p className="text-muted-foreground text-center font-medium">Orders Completed</p>
               </div>
               <div className="flex flex-col items-center space-y-2 p-6">
                 <div className="text-4xl font-bold text-[#40148c]">
-                  <CounterAnimation end={98} suffix="%" />
+                  <CounterAnimation end={99} suffix="%" />
                 </div>
-                <p className="text-muted-foreground text-center font-medium">On-Time Delivery Rate</p>
+                <p className="text-muted-foreground text-center font-medium">Customer Satisfaction</p>
               </div>
               <div className="flex flex-col items-center space-y-2 p-6">
                 <div className="text-4xl font-bold text-[#40148c]">
-                  <CounterAnimation end={100} suffix="+" />
+                  <CounterAnimation end={200} suffix="+" />
                 </div>
                 <p className="text-muted-foreground text-center font-medium">Active Clients</p>
               </div>
               <div className="flex flex-col items-center space-y-2 p-6">
                 <div className="text-4xl font-bold text-[#40148c]">
-                  <CounterAnimation end={7} />
+                  <CounterAnimation end={8} />
                 </div>
-                <p className="text-muted-foreground text-center font-medium">Emirates Covered</p>
+                <p className="text-muted-foreground text-center font-medium">Years of Experience</p>
               </div>
             </div>
           </div>
@@ -200,7 +197,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How It Works</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Our streamlined process makes e-commerce fulfillment simple and efficient
+                Our streamlined process makes IT hardware procurement simple and efficient
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl gap-6 py-8 md:grid-cols-3 md:gap-8">
@@ -208,30 +205,31 @@ export default function Home() {
                 <div className="absolute -top-4 -left-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#40148c] text-white font-bold">
                   1
                 </div>
-                <Package className="h-10 w-10 text-[#40148c]" />
-                <h3 className="text-xl font-bold">Send Your Inventory</h3>
+                <Cpu className="h-10 w-10 text-[#40148c]" />
+                <h3 className="text-xl font-bold">Consultation</h3>
                 <p className="text-muted-foreground text-center">
-                  Ship your products to our warehouse or let us source products for you. We'll handle the rest.
+                  Our experts work with you to understand your IT infrastructure needs and recommend the right
+                  solutions.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background relative">
                 <div className="absolute -top-4 -left-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#40148c] text-white font-bold">
                   2
                 </div>
-                <Store className="h-10 w-10 text-[#40148c]" />
-                <h3 className="text-xl font-bold">We Store & Manage</h3>
+                <Server className="h-10 w-10 text-[#40148c]" />
+                <h3 className="text-xl font-bold">Procurement</h3>
                 <p className="text-muted-foreground text-center">
-                  Your inventory is stored in our secure facilities and managed through our advanced inventory system.
+                  We source high-quality hardware components from trusted manufacturers and perform technical testing.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-4 border rounded-lg p-6 shadow-sm bg-background relative">
                 <div className="absolute -top-4 -left-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#40148c] text-white font-bold">
                   3
                 </div>
-                <Truck className="h-10 w-10 text-[#40148c]" />
-                <h3 className="text-xl font-bold">We Ship & You Grow</h3>
+                <Shield className="h-10 w-10 text-[#40148c]" />
+                <h3 className="text-xl font-bold">Support & Warranty</h3>
                 <p className="text-muted-foreground text-center">
-                  Orders are picked, packed, and shipped to your customers while you focus on growing your business.
+                  We provide ongoing technical support and warranty services to ensure your hardware performs optimally.
                 </p>
               </div>
             </div>
@@ -259,12 +257,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Ahmed K.</h4>
-                    <p className="text-sm text-muted-foreground">Fashion E-Commerce</p>
+                    <p className="text-sm text-muted-foreground">IT Director, Financial Services</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-left">
-                  "SIDIS has transformed our logistics operations. Their COD service and next-day delivery have
-                  significantly improved our customer satisfaction rates."
+                  "SIDIS has transformed our data center infrastructure. Their server solutions and technical expertise
+                  have significantly improved our system performance and reliability."
                 </p>
                 <div className="flex text-[#40148c]">
                   <svg
@@ -328,12 +326,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Sara M.</h4>
-                    <p className="text-sm text-muted-foreground">Beauty Products</p>
+                    <p className="text-sm text-muted-foreground">CTO, Tech Startup</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-left">
-                  "Their product sourcing team helped us find high-quality beauty products at competitive prices. Our
-                  profit margins have increased by 30% since working with SIDIS."
+                  "Their hardware procurement team helped us find high-quality components at competitive prices. Our
+                  systems are running 40% faster since upgrading with SIDIS hardware."
                 </p>
                 <div className="flex text-[#40148c]">
                   <svg
@@ -397,12 +395,12 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Mohammed R.</h4>
-                    <p className="text-sm text-muted-foreground">Electronics Store</p>
+                    <p className="text-sm text-muted-foreground">System Administrator</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-left">
-                  "The Shopify store SIDIS built for us has a 45% higher conversion rate than our previous site. Their
-                  team understands e-commerce optimization and delivers results."
+                  "The storage solutions SIDIS provided have transformed our data management capabilities. Their
+                  technical support team is responsive and knowledgeable, making them a trusted partner."
                 </p>
                 <div className="flex text-[#40148c]">
                   <svg
@@ -471,7 +469,7 @@ export default function Home() {
                 Frequently Asked Questions
               </h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Find answers to common questions about our e-commerce services
+                Find answers to common questions about our IT hardware services
               </p>
             </div>
             <div className="mx-auto grid max-w-5xl gap-6 py-8 md:gap-8">
@@ -481,9 +479,10 @@ export default function Home() {
                     <CheckCircle className="h-6 w-6 text-[#40148c]" />
                   </div>
                   <div className="flex flex-col space-y-2 text-left">
-                    <h3 className="text-xl font-bold">How quickly can you fulfill orders?</h3>
+                    <h3 className="text-xl font-bold">What brands do you offer?</h3>
                     <p className="text-muted-foreground">
-                      We offer next-day delivery within the UAE for orders placed before 4 PM. 
+                      We offer hardware from leading manufacturers including Intel, AMD, Samsung, Seagate, Western
+                      Digital, Supermicro, HPE, Dell, Lenovo, and many more.
                     </p>
                   </div>
                 </div>
@@ -494,10 +493,10 @@ export default function Home() {
                     <CheckCircle className="h-6 w-6 text-[#40148c]" />
                   </div>
                   <div className="flex flex-col space-y-2 text-left">
-                    <h3 className="text-xl font-bold">How does your COD service work?</h3>
+                    <h3 className="text-xl font-bold">Do you provide warranty and technical support?</h3>
                     <p className="text-muted-foreground">
-                      We collect cash payments from your customers upon delivery and transfer the funds directly to your
-                      UAE bank account on a daily basis, with detailed reporting.
+                      Yes, all our hardware comes with manufacturer warranty, and we provide additional technical
+                      support to ensure your systems run optimally throughout their lifecycle.
                     </p>
                   </div>
                 </div>
@@ -508,10 +507,11 @@ export default function Home() {
                     <CheckCircle className="h-6 w-6 text-[#40148c]" />
                   </div>
                   <div className="flex flex-col space-y-2 text-left">
-                    <h3 className="text-xl font-bold">Can you help with product sourcing if I'm new to e-commerce?</h3>
+                    <h3 className="text-xl font-bold">Can you help with custom server configurations?</h3>
                     <p className="text-muted-foreground">
-                      Our product sourcing team can help identify trending products, negotiate with suppliers, and
-                      ensure quality control for your new e-commerce venture.
+                      Our team of experts can help design and build custom server configurations tailored to your
+                      specific workload requirements, whether you need high-performance computing, storage-optimized
+                      systems, or specialized solutions.
                     </p>
                   </div>
                 </div>
@@ -522,10 +522,10 @@ export default function Home() {
                     <CheckCircle className="h-6 w-6 text-[#40148c]" />
                   </div>
                   <div className="flex flex-col space-y-2 text-left">
-                    <h3 className="text-xl font-bold">Do you integrate with my existing e-commerce platform?</h3>
+                    <h3 className="text-xl font-bold">Do you offer hardware for data centers?</h3>
                     <p className="text-muted-foreground">
-                      Yes, we integrate with all major e-commerce platforms including Shopify, WooCommerce, Magento, and
-                      custom solutions to ensure seamless order processing.
+                      Yes, we specialize in data center hardware including servers, storage systems, networking
+                      equipment, and all the components needed to build and maintain enterprise-grade IT infrastructure.
                     </p>
                   </div>
                 </div>
@@ -542,7 +542,7 @@ export default function Home() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
               <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Ready to grow your e-commerce business? Get in touch with us today to discuss how we can help.
+                Ready to upgrade your IT infrastructure? Get in touch with us today to discuss how we can help.
               </p>
             </div>
             <div className="mx-auto grid w-full max-w-5xl gap-6 py-8 lg:grid-cols-2">
@@ -624,9 +624,10 @@ export default function Home() {
                         className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       >
                         <option value="">Select a service</option>
-                        <option value="fulfillment">Fulfillment Services</option>
-                        <option value="sourcing">Product Sourcing</option>
-                        <option value="shopify">Shopify Development</option>
+                        <option value="servers">Server Solutions</option>
+                        <option value="storage">Storage Solutions</option>
+                        <option value="components">CPU & Components</option>
+                        <option value="memory">Memory Solutions</option>
                         <option value="other">Other Inquiry</option>
                       </select>
                     </div>
@@ -640,7 +641,7 @@ export default function Home() {
                       <textarea
                         id="message"
                         className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                        placeholder="Tell us about your e-commerce needs"
+                        placeholder="Tell us about your IT hardware needs"
                       />
                     </div>
                     <Button className="bg-[#40148c] hover:bg-[#40148c]/90">Send Message</Button>

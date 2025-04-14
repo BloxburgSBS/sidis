@@ -12,7 +12,7 @@ export function SiteFooter() {
               <Image src="/logo-white.png" alt="SIDIS FZ-LLC" width={100} height={33} />
             </Link>
             <p className="text-sm text-white/80">
-              Your trusted partner for innovative e-commerce solutions in the UAE.
+              Your trusted partner for premium IT hardware solutions in the UAE.
             </p>
           </div>
           <div className="space-y-4">
@@ -36,16 +36,19 @@ export function SiteFooter() {
             <h3 className="text-lg font-bold">Services</h3>
             <nav className="flex flex-col space-y-2">
               <Link href="#services" className="text-sm text-white/80 hover:text-white">
-                Warehousing
+                Server Solutions
               </Link>
               <Link href="#services" className="text-sm text-white/80 hover:text-white">
-                COD Remit
+                Storage Solutions
               </Link>
               <Link href="#services" className="text-sm text-white/80 hover:text-white">
-                Fulfillment
+                CPU & Components
               </Link>
               <Link href="#services" className="text-sm text-white/80 hover:text-white">
-                Product Sourcing
+                Memory Solutions
+              </Link>
+              <Link href="#services" className="text-sm text-white/80 hover:text-white">
+                Technical Support
               </Link>
             </nav>
           </div>
