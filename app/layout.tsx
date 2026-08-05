@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "SIDIS FZ-LLC",
   description:
-    "SIDIS FZ-LLC provides complete IT hardware solutions including servers, storage, networking, and premium components.",
+    "SIDIS FZ-LLC provides complete IT hardware solutions including servers, storage, networking, and premium components",
   icons: {
     icon: '/favicon.png',
   },
